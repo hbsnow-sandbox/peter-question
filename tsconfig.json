@@ -1,0 +1,26 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+      "outDir": "src",
+      "target": "es6",
+      "module": "commonjs",
+      "strict": true,
+      "baseUrl": "./src",
+      "paths": {
+          "*": ["@types/*"]
+      },
+      "lib": [
+          "es2018",
+          "dom"
+      ],
+      "resolveJsonModule": true,
+      "esModuleInterop": true
+  },
+  "include": [
+      "src/**/*"
+  ],
+  "exclude": [
+    ".git",
+    "node_modules"
+  ]
+}
