@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/explicit-function-return-type */
-
 const isSameNumber = (target: string): boolean => {
   for (let i = 1; i <= 8; i++) {
     const pos = target.slice(i - 1, i)
@@ -10,12 +8,12 @@ const isSameNumber = (target: string): boolean => {
   return false
 }
 
-const isPeterOne = (shuffled: number[]): boolean => {
-  const numerator = [shuffled[0], shuffled[3], shuffled[6]]
+const isPeterOne = (numbers: number[]): boolean => {
+  const numerator = [numbers[0], numbers[3], numbers[6]]
   const denominator = [
-    10 * shuffled[1] + shuffled[2],
-    10 * shuffled[4] + shuffled[5],
-    10 * shuffled[7] + shuffled[8]
+    10 * numbers[1] + numbers[2],
+    10 * numbers[4] + numbers[5],
+    10 * numbers[7] + numbers[8]
   ]
   // 分母を払う
   if (
