@@ -27,8 +27,7 @@ const isPeterOne = (numbers: number[]): boolean => {
 
   return false
 }
-
-(() => {
+;((): void => {
   const min = 123456789
   const max = 987654321
 
@@ -54,8 +53,8 @@ const isPeterOne = (numbers: number[]): boolean => {
 
     console.log(
       `${targetAry[0]}/${targetAry[1]}${targetAry[2]} + ` +
-      `${targetAry[3]}/${targetAry[4]}${targetAry[5]} + ` +
-      `${targetAry[6]}/${targetAry[7]}${targetAry[8]} = 1`
+        `${targetAry[3]}/${targetAry[4]}${targetAry[5]} + ` +
+        `${targetAry[6]}/${targetAry[7]}${targetAry[8]} = 1`
     )
   }
 })()
